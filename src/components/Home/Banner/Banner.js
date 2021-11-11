@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Carousel } from 'react-bootstrap';
+import { Carousel,Container } from 'react-bootstrap';
 
 import banner1 from "../../../images/banner1.jpg";
 import banner2 from "../../../images/banner2.jpg";
@@ -10,7 +10,8 @@ import banner3 from "../../../images/banner3.jpg";
 
 const Banner = () => {
     return (
-        <>
+      <>
+        <Container>
            <Carousel id="home" fade>
   <Carousel.Item>
     <img
@@ -19,8 +20,8 @@ const Banner = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h1 className='carusol-title'>Get Appointment</h1>
-      <p className='carusol-description'>At E-sheba, over 50 doctors across 20 specialties are ready to care for you..</p>
+      <h1 className='carusol-title'>Get Your Backpack</h1>
+      <p className='carusol-description'>Keep calm and backpack the world</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -31,8 +32,8 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h1 className='carusol-title'>Talk To A Doctor</h1>
-      <p className='carusol-description'>E-sheba now offer video consults with our doctor</p>
+      <h1 className='carusol-title'>Fixed A Map</h1>
+      <p className='carusol-description'>Don't be a tourist, be a traveler.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -43,11 +44,12 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h1 className='carusol-title'>Get Medicines</h1>
-      <p className='carusol-description'>E-sheba phermacy is now online and delivers accross Bangladesh.</p>
+      <h1 className='carusol-title'>Let's Fly</h1>
+      <p className='carusol-description'>Once you have tasted flight, you will forever walk the earth with your eyes turned skyward</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+        </Container>
         </>
     );
 };
