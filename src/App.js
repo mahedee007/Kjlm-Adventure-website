@@ -12,6 +12,10 @@ import DestinationBooking from './components/Home/DestinationBooking/Destination
 import MyBooking from './components/Home/MyBooking/MyBooking';
 import ManageBooking from './components/Home/ManageBooking/ManageBooking';
 import AddTour from './components/Home/AddTour/AddTour';
+import NotFound from './components/Home/NotFound/NotFound';
+
+import Footer from './components/Home/Footer/Footer';
+import About from './components/Home/About/About';
 
 function App() {
   return (
@@ -25,12 +29,15 @@ function App() {
               <Route exact path='/signin'><Signin></Signin></Route>
               <Route exact path='/register'><Register></Register></Route>
               <Route exact path='/destinations'><Destinations></Destinations></Route>
+              <Route exact path ='/about'><About></About></Route>
               <PrivateRoute exact path="/destinationbooking"><DestinationBooking></DestinationBooking></PrivateRoute>
               <PrivateRoute exact path="/destinationbooking/:destinationId"><DestinationBooking></DestinationBooking></PrivateRoute>
               <PrivateRoute exact path="/myBooking"><MyBooking></MyBooking></PrivateRoute>
               <PrivateRoute exact path="/manageBooking"><ManageBooking></ManageBooking></PrivateRoute>
               <PrivateRoute exact path="/addTour"><AddTour></AddTour></PrivateRoute>
+              <Route path='*'><NotFound></NotFound></Route>
             </Switch>
+            <Footer></Footer>
           
         </Router>
 
