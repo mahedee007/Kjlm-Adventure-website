@@ -32,16 +32,16 @@ const Signin = () => {
                 <h3 className="logo-name">KJML Adventures</h3>
             </div>
             <div className="col-md-12 col-sm-12 col-lg-12">
-                <h3 className="text-dark mt-3 mb-4">SignIn to <span className="logo-name">KJML Adventures</span></h3>
+                
                 <div className="">
                    <button
                    onClick={ handleGoogleLogin }
-                   className="m-1 btn btn-warning text-light  mx-auto"
+                   className="m-1 btn btn-warning fab fa-google text-light  mx-auto"
                    > Sign In with Google</button>
                 </div>
                 <div className="row mb-3 mt-3">
                     <div className="col-sm-6 offset-sm-6 mx-auto m-0">
-                        <p className="text-secondary">New to <span className="logo-name">KJML Adventures</span>?  <Link to="/register">Create an account</Link>
+                        <p className="text-dark">New to <span className="logo-name">KJML Adventures</span>?  <Link to="/register">Create an account</Link>
                         </p>
                     </div>
                 </div>

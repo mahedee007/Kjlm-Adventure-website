@@ -29,7 +29,7 @@ const AddTour = () => {
 
     return (
         <div className="mx-auto w-75 mt-5 mb-5">
-             <div className="container shadow mt-3 mb-5 p-3">
+             <div className="container  mt-3 mb-5 p-3">
                 <h1 className="mt-5 text-center text-warning fw-bold">Add a new Tour</h1>
                 <div className="w-25 mx-auto mt-3 mb-3">
                     <div className="border-0 d-flex justify-content-center align-items-center">

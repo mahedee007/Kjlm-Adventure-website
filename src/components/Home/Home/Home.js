@@ -3,7 +3,7 @@ import About from "../About/About";
 
 import Banner from '../Banner/Banner';
 import Destinations from "../Destinations/Destinations";
-import Gallery from "../Gallery/Gallery";
+import Contact from "../Contact/Contact";
 
 
 const Home = () => {
@@ -21,8 +21,9 @@ const Home = () => {
           <div className="mb-2">
             <About></About>
           </div>
+          
           <div className="mb-2">
-            <Gallery></Gallery>
+            <Contact></Contact>
           </div>
           
           
